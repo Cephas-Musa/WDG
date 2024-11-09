@@ -1,0 +1,22 @@
+// Row
+//
+// Rows contain your columns.
+
+@if $enable-grid-classes {
+  .row {
+    @require make-row();
+
+    > * {
+      @require make-col-ready();
+    }
+  }
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@if $enable-grid-classes {
+  @require make-grid-columns();
+}

@@ -1,0 +1,451 @@
+/*!
+ * Bootstrap Utilities v5.0.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+@require _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@require _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+@require _assert-ascending($container-max-widths, "$container-max-widths");
+.clearfix {
+  @require clearfix();
+}
+
+.link-primary {
+  color: #0d6efd;
+}
+.link-primary:hover, .link-primary:focus {
+  color: #0a58ca;
+}
+
+.link-secondary {
+  color: #6c757d;
+}
+.link-secondary:hover, .link-secondary:focus {
+  color: #565e64;
+}
+
+.link-success {
+  color: #198754;
+}
+.link-success:hover, .link-success:focus {
+  color: #146c43;
+}
+
+.link-info {
+  color: #0dcaf0;
+}
+.link-info:hover, .link-info:focus {
+  color: #3dd5f3;
+}
+
+.link-warning {
+  color: #ffc107;
+}
+.link-warning:hover, .link-warning:focus {
+  color: #ffcd39;
+}
+
+.link-danger {
+  color: #dc3545;
+}
+.link-danger:hover, .link-danger:focus {
+  color: #b02a37;
+}
+
+.link-light {
+  color: #f8f9fa;
+}
+.link-light:hover, .link-light:focus {
+  color: #f9fafb;
+}
+
+.link-dark {
+  color: #212529;
+}
+.link-dark:hover, .link-dark:focus {
+  color: #1a1e21;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+.ratio::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: "";
+}
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ratio-1x1 {
+  --bs-aspect-ratio: 100%;
+}
+
+.ratio-4x3 {
+  --bs-aspect-ratio: 75%;
+}
+
+.ratio-16x9 {
+  --bs-aspect-ratio: 56.25%;
+}
+
+.ratio-21x9 {
+  --bs-aspect-ratio: 42.8571428571%;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@require media-breakpoint-up($breakpoint) {
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@require media-breakpoint-up($breakpoint) {
+  .sticky-sm-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@require media-breakpoint-up($breakpoint) {
+  .sticky-md-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@require media-breakpoint-up($breakpoint) {
+  .sticky-lg-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@require media-breakpoint-up($breakpoint) {
+  .sticky-xl-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@require media-breakpoint-up($breakpoint) {
+  .sticky-xxl-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  @require visually-hidden();
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.text-truncate {
+  @require text-truncate();
+}
+
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@require media-breakpoint-up($breakpoint) {
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+  @require generate-utility($utility, $infix);
+}
+@media (min-width: 1200px) {
+  @require generate-utility($utility, $infix, true);
+}
+@media print {
+  @require generate-utility($utility, "-print");
+}/*# sourceMappingURL=bootstrap-utilities.css.map */
